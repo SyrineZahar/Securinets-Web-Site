@@ -1,4 +1,4 @@
-# TP7
+# Securinets Iset Charguia Web Site
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.7.
 
