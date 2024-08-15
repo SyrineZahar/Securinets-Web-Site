@@ -1,0 +1,18 @@
+.btn{
+    margin-top: 60%;
+}
+.btn:hover{
+    color: black;
+    background: #282828;
+}
+img{
+    margin-left: 40%;
+    margin-top: 5%;
+}
+
+i{
+    color: red;
+}
+.container{
+    margin-top: 60px;
+}

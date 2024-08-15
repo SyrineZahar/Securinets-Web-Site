@@ -1,0 +1,46 @@
+<div class="container">
+    <h2>Add an activity</h2>
+      <form [formGroup]="activityForm" (ngSubmit)="onSubmit()">
+          <div class="form-row">
+            <div class="col-md-4 mb-3">
+              <label>Name</label>
+              <input type="text" class="form-control" formControlName="name">
+              <div *ngIf="activityForm.controls['name'].invalid && (activityForm.controls['name'].touched)" >
+                <span *ngIf="activityForm.controls['name'].errors?.['minlength']">Min length is 5</span>
+                <span *ngIf="activityForm.controls['name'].errors?.['required']">Required!</span>
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-md-6 mb-3">
+              <label>Picture</label>
+              <div class="custom-file">
+                  <input type="text" formControlName="picture" placeholder="" >
+                  <div *ngIf="activityForm.controls['picture'].invalid && (activityForm.controls['picture'].touched)" >
+                    <span *ngIf="activityForm.controls['picture'].errors?.['minlength']">Min length is 12</span>
+                    <span *ngIf="activityForm.controls['picture'].errors?.['required']">Required!</span>
+                  </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="validationServer04">Date</label>
+              <input type="date" class="form-control" formControlName="date">
+            </div>
+            <div class="col-md-4 mb-3">
+              <label>Participants</label>
+              <input type="text" class="form-control" formControlName="NombreDeParticipants">
+              <div *ngIf="activityForm.controls['NombreDeParticipants'].invalid && (activityForm.controls['NombreDeParticipants'].touched)" >
+                <span *ngIf="activityForm.controls['NombreDeParticipants'].errors?.['max']">Max is 200</span>
+                <span *ngIf="activityForm.controls['NombreDeParticipants'].errors?.['required']">Required!</span>
+              </div>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" formControlName="interne">
+              <label class="form-check-label" for="inlineRadio1">Intern</label>
+            </div>
+          </div>
+          <div class="buttons">
+            <button class="btn btn-success" type="submit" routerLink="/club">Add</button>
+          </div>
+      </form>
+  </div>

@@ -1,0 +1,17 @@
+<h2>Our departements</h2>
+<ul *ngFor="let d of dep" class="list-group">
+        <li class="list-group-item bg">
+             {{d.nom | departementName | titlecase }}
+             <button type="button" class="btn btn-danger" (click)="deleteDepartement(d.id)">delete</button>
+        </li>
+    
+</ul>
+<form [formGroup]="depForm" (ngSubmit)="addDepartement()">
+        <div class="form-group">
+          <h2>Add Departement</h2>
+          <input type="text" class="form-control" placeholder="Enter departement name" formControlName="nom">
+          <span *ngIf="depForm.controls['nom'].errors?.['minlength']">Min length is 5</span>
+          <span *ngIf="depForm.controls['nom'].errors?.['required']">Required!</span>
+          <input type="submit" class="btn btn-success" value="Add departement">
+        </div>
+</form>

@@ -1,0 +1,15 @@
+.footer{
+    background-color: #191C24;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    height: 100px;
+    flex-direction: row;
+    cursor: pointer;
+}
+.red{
+    color: #EB1616;
+    text-decoration: none;
+}

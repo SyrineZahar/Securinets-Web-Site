@@ -1,0 +1,90 @@
+{
+  "admin": [
+    {
+      "id": 1,
+      "username": "admin1",
+      "pwd": "admin2"
+    },
+    {
+      "username": "cyrine",
+      "pwd": "cyrine1",
+      "id": 2
+    }
+  ],
+  "departement": [
+    {
+      "id": 1,
+      "nom": "Human Ressources"
+    },
+    {
+      "id": 3,
+      "nom": "Technical"
+    }
+  ],
+  "activity": [
+    {
+      "name": "aaaaaa",
+      "picture": "assets/bodygsecurity.png",
+      "date": "2023-12-23",
+      "interne": true,
+      "NombreDeParticipants": "15",
+      "id": 2
+    },
+    {
+      "name": "cybersecurity",
+      "picture": "assets/bodygsecurity.png",
+      "date": "2023-12-23",
+      "NombreDeParticipants": 17,
+      "interne": false,
+      "id": 3
+    },
+    {
+      "name": "cybersecurity",
+      "picture": "assets/bodygsecurity.png",
+      "date": "2023-12-23",
+      "NombreDeParticipants": 17,
+      "interne": true,
+      "id": 4
+    },
+    {
+      "name": "cybersecurity",
+      "picture": "assets/bodygsecurity.png",
+      "date": "2023-12-13",
+      "NombreDeParticipants": 17,
+      "interne": true,
+      "id": 5
+    },
+    {
+      "name": "AAAAAAAAAAAAAAAAAA",
+      "picture": "assets/bodygsecurity.png",
+      "date": "2023-12-23",
+      "interne": true,
+      "NombreDeParticipants": 17,
+      "id": 6
+    },
+    {
+      "name": "AAAAAAAAA",
+      "picture": "assets/bodygsecurity.png",
+      "date": "2023-12-23",
+      "interne": true,
+      "NombreDeParticipants": 17,
+      "id": 7
+    },
+    {
+      "name": "hhhhh",
+      "picture": "assets/bodygsecurity.png",
+      "date": "2023-12-23",
+      "interne": true,
+      "NombreDeParticipants": 17,
+      "id": 9
+    },
+    {
+      "name": "geantttttt",
+      "picture": "assets/bodygsecurity.png",
+      "date": "2023-12-31",
+      "interne": false,
+      "NombreDeParticipants": "20",
+      "id": 10
+    }
+  ]
+}

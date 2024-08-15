@@ -1,0 +1,61 @@
+.bg{
+    background-image: url(../../../assets/pcbanner.png);
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    flex-direction: column;
+    text-align: center;    
+}
+span{
+    font-size: large;
+}
+.btn{
+    color:black
+}
+.pic1{
+    width: 150px;
+    height: 150px;
+
+}
+.pic2{
+    width: 300px;
+    margin: 10px;
+}
+.division{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+.imgk{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.imgdbl{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+}
+.imgndbl{
+    flex-direction: column;
+}
+.box {
+    background-color: #191C24;
+    border-radius: 8px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.intro{
+    color: darkred;
+}
+p{
+    font-size:medium;
+}

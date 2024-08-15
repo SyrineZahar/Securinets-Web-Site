@@ -1,0 +1,41 @@
+.slider{
+    height: 250px;
+    display: grid;
+    margin: auto;
+    place-items: center;
+    position: relative;
+    width: 90%;
+    overflow: hidden;
+    /* overflow: hidden; */
+}
+.slide-track{
+    display: flex;
+    width: calc(250px*18);
+    animation: scroll 40s linear infinite;
+}
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px * 9));
+    }
+}
+.slide-track:hover{
+    animation-play-state: paused;
+
+}
+.slide{
+    height: 200px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+img{
+    width: 100%;
+}
+.body{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}

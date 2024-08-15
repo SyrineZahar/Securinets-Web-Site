@@ -1,0 +1,17 @@
+.sidebare{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: #191C24;
+}
+.contenu{
+    width: 80%;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+} 
+.bureau{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}

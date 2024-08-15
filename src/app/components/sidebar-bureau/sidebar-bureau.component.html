@@ -1,0 +1,28 @@
+<div>
+    <ul>
+        <li class="sidebare-list sidebare-name">
+            <i class="bi bi-house-lock"></i>
+            <span>&nbsp;&nbsp;&nbsp;Admin</span>
+        </li>
+        <li class="sidebare-list">
+            <a routerLink="addActivity" routerLinkActive="active">
+                <i class="bi bi-activity"></i>
+                <span>&nbsp;&nbsp;&nbsp;Activities</span>
+            </a> 
+        </li>
+        <li class="sidebare-list">
+            <a routerLink="departement" routerLinkActive="active">
+                <span>&nbsp;&nbsp;&nbsp;Departement</span>
+            </a> 
+        </li>
+        <li class="sidebare-list">
+            <a routerLink="Admin" routerLinkActive="active">
+                <span>&nbsp;&nbsp;&nbsp;Admin</span>
+            </a> 
+        </li>
+        <li class="sidebare-list">
+            <i class="bi bi-door-closed"></i>
+            <span (click)="onDisconnect()">&nbsp;&nbsp;&nbsp;LogOut</span>
+        </li>
+    </ul>
+</div>

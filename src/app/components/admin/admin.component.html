@@ -1,0 +1,29 @@
+<h2>Our Admins</h2>
+<ul *ngFor="let a of admin" class="list-group">
+        <li class="list-group-item bg">
+                {{a.username}}
+             <button type="button" class="btn btn-danger" (click)="deleteAdmin(a.id)">delete</button>
+        </li>
+    
+</ul>
+<form [formGroup]="adminForm" (ngSubmit)="addAdmin()">
+        <div class="form-group">
+          <h2>Admin Username</h2>
+          <input type="text" class="form-control" placeholder="Enter admin name" formControlName="username">
+          <span *ngIf="adminForm.controls['username'].errors?.['minlength']">Min length is 5</span>
+          <span *ngIf="adminForm.controls['username'].errors?.['required']">Required!</span>
+          <h2>Admin Password</h2>
+          <input type="text" class="form-control" placeholder="Enter admin name" formControlName="pwd">
+          <span *ngIf="adminForm.controls['pwd'].errors?.['pattern']">Min un numero</span>
+          <span *ngIf="adminForm.controls['pwd'].errors?.['required']">Required!</span>
+          <input type="submit" class="btn btn-success" value="Add admin">
+        </div>
+</form>
+<form action="">
+        <h2>Change Your Password</h2>
+        <input type="text" class="form-control" placeholder="Enter old password" #mdp>
+        <input type="text" class="form-control" placeholder="Enter new password" #nmdp>
+        <input type="text" class="form-control" placeholder="Enter new password" #vnmdp>
+        <input type="submit" class="btn btn-success" value="change password" (click)="change(mdp.value,nmdp.value,vnmdp.value)">    
+</form>
+

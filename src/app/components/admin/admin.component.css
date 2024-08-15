@@ -1,0 +1,25 @@
+
+li{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.bg{
+    background-color: #191C24;
+    color: white;
+    width: 500px;
+}
+.btn{
+    color: black;
+}
+.form-control{
+    background: #191C24;
+    width: 500px;
+    color: white;
+}
+form{
+    margin-top: 20px;
+}
+span{
+    color: red;
+}

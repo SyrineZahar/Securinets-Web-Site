@@ -1,0 +1,18 @@
+<div>
+    <ul class='nav'>
+        <li class='nav-item'>
+            <a class='nav-link' routerLink="home">
+                <img [src]="logo" alt="logo club" width="100px" height="100%">
+            </a>
+        </li>
+        <li class='nav-item'>
+            <a class='nav-link' routerLink="club"  routerLinkActive="active">Club</a>
+        </li>
+        <li class='nav-item'>
+            <a class='nav-link' routerLink="contact" routerLinkActive="active">Contact</a>
+        </li>
+        <li>
+            <button type="button" class='btn btn-danger' (click)="navigateTo()">Login</button>          
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,41 @@
+.sidebare-list{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    cursor: pointer;
+    width: 250px;
+    height: 40px;
+    font-size: small;
+    margin: 0;
+}
+.sidebare-name{
+    background-color: #000000; 
+    border-left: 2px solid #EB1616;
+    border-right: 2px solid #EB1616;
+    color: #EB1616;
+}
+.sidebare-list:hover{
+    background-color: #000000; 
+    border-left: 2px solid #EB1616;
+    border-right: 2px solid #EB1616;
+    color: #EB1616;
+}
+.active{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    cursor: pointer;
+    width: 250px;
+    height: 40px;
+    font-size: small;
+    background-color: #000000; 
+    border-left: 2px solid #EB1616;
+    border-right: 2px solid #EB1616;
+    color: #EB1616;
+}
+a{
+    text-decoration: none;
+    color: white;
+}

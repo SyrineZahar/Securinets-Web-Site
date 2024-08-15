@@ -1,0 +1,26 @@
+<section>
+  <div class='login-box'>
+    <form [formGroup]="loginForm" novalidate>
+      <h2>Login</h2>
+      <div class='input-box'>
+        <span class='icon'>
+        </span>
+        <input type="text" #lg formControlName="username">
+        <label>Username</label>
+      </div>
+      <div *ngIf="isValidUsername()" class="alert alert-danger">
+        L'Username est obligatoire
+      </div>
+      <div class='input-box'>
+        <span class='icon'>
+        </span>
+        <input type="password" #mdp formControlName="pwd">
+        <label>Password</label>
+      </div>
+      <div *ngIf="isValidPassword()" class="alert alert-danger">
+        Password est obligatoire et min length 4
+      </div>
+      <button (click)="login(lg.value,mdp.value)" [disabled]="loginForm.invalid">Login</button> 
+    </form>
+  </div>
+</section>
